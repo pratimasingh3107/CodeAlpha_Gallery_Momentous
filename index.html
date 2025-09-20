@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentous Gallery</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (for social media icons and other icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">Momentous</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="gallery">
+        <h2>Explore Our Nature Gallery</h2>
+        <p>Click on an image to view it in full size.</p>
+        <div class="image-gallery" id="image-gallery"></div>
+    </main>
+
+    <!-- Modal Popup for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged Image">
+            <div class="modal-controls">
+                <button id="prevBtn" class="modal-btn">Prev</button>
+                <button id="nextBtn" class="modal-btn">Next</button>
+                <button id="likeBtn" class="modal-btn">Like</button>
+                <button id="backBtn" class="modal-btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Momentous Gallery. Created by Pratima Singh. @All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pratima-singh-947964278" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/pratimasingh3107" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
